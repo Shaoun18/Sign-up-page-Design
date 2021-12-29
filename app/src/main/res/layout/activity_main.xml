@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+
+    android:background=" #b2beb5"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_userplus" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="Sign up"
+        android:textColor="#F44336"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Sign in with your GitHub, Twitter, or Linkedin account\n community for designers &amp; developers"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="15sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/btn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#29487D"
+            android:text="Login with Facebook"
+            android:textColor="#FFFFFF"
+            android:textOff="Login with Facebook"
+            android:textOn="Login with Facebook"
+            android:translationY="50px" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:text="Already have account?"
+            android:textAlignment="center"
+            android:textColor="#29487D"
+            android:textSize="15sp"
+            android:translationY="50px" />
+
+        <EditText
+            android:id="@+id/userNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_user"
+            android:ems="10"
+            android:hint="  Username"
+            android:inputType="textPersonName"
+            android:translationX="15px"
+            android:translationY="50px" />
+
+        <EditText
+            android:id="@+id/passwordTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userNameTV"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_pass"
+            android:ems="10"
+            android:hint="  Password"
+            android:inputType="textPersonName"
+            android:translationX="15px"
+            android:translationY="50px" />
+
+        <EditText
+            android:id="@+id/emailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordTV"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_mail"
+            android:ems="10"
+            android:hint="  Email"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:translationX="15px"
+            android:translationY="50px" />
+
+        <EditText
+            android:id="@+id/fullnameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailTV"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_user"
+            android:ems="10"
+            android:hint="  Username"
+            android:inputType="textPersonName"
+            android:translationX="15px"
+            android:translationY="50px" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/btn2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/fullnameTV"
+            android:layout_centerHorizontal="true"
+            android:background="#F44336"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textOff="Sign Up"
+            android:textOn="Sign Up"
+            android:translationY="100px" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2"
+            android:layout_centerHorizontal="true"
+            android:text="By signing, up you agreeing  to our Terms of use"
+            android:textAlignment="center"
+            android:textColor="#29487D"
+            android:textSize="15sp"
+            android:translationY="200px" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
